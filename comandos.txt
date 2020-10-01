@@ -1,17 +1,29 @@
 **----------------------**
-
 clonar un repo
 
 git clone ${repo}
 
 **----------------------**
-
 abrir una rama
 
 git checkout -b ${nombreRama}
 
 **----------------------**
-
 ver diferencias con master o checkear status
 
 git status
+
+**----------------------**
+preparar archivo
+
+git add ${nombreArchivo}
+
+**----------------------**
+nombrar modificaciones
+
+git commit -m "${nombreCommit}"
+
+**----------------------**
+subir cogido
+
+git push origin ${nombreRama}
