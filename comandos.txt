@@ -1,0 +1,17 @@
+**----------------------**
+
+clonar un repo
+
+git clone ${repo}
+
+**----------------------**
+
+abrir una rama
+
+git checkout -b ${nombreRama}
+
+**----------------------**
+
+ver diferencias con master o checkear status
+
+git status
