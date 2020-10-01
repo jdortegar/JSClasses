@@ -24,7 +24,7 @@ nombrar modificaciones
 git commit -m "${nombreCommit}"
 
 **----------------------**
-subir cogido
+subir codigo
 
 git push origin ${nombreRama}
 
