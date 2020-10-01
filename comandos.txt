@@ -27,3 +27,12 @@ git commit -m "${nombreCommit}"
 subir cogido
 
 git push origin ${nombreRama}
+
+**----------------------**
+bajar codigo
+
+git pull origin develop
+
+**----------------------**
+crear aplicacion web con react
+npx create-react-app ${nombreDeLaApp}
