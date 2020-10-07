@@ -9,6 +9,12 @@ abrir una rama
 git checkout -b ${nombreRama}
 
 **----------------------**
+cambiar de rama
+
+git checkout ${nombreRama}
+
+**----------------------**
+
 ver diferencias con master o checkear status
 
 git status
