@@ -42,3 +42,13 @@ git pull origin develop
 **----------------------**
 crear aplicacion web con react
 npx create-react-app ${nombreDeLaApp}
+
+**-------------------------------**
+traer lo que esta en un repo comunitario a tu repositorio local (trae TODO!!!)
+
+git fetch
+
+**------------------------------**
+Actualizar tu branch con otro branch
+
+git merge {develop}
