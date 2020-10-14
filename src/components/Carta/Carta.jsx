@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, Avatar } from "antd";
+import Button from "../Button/Button";
 
 const { Meta } = Card;
 
@@ -31,6 +32,14 @@ class Carta extends React.Component {
                 <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
               }
             />
+            <div
+              style={{
+                display: "flex",
+                padding: "30px 0px 0px",
+              }}
+            >
+              <Button></Button>
+            </div>
           </Card>
         </div>
       </>
