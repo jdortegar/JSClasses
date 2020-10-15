@@ -7,7 +7,7 @@ class Button extends React.Component {
     return (
       <>
         <Tooltip title="search">
-          <Boton type="primary" shape="rectangle">
+          <Boton type="primary" shape="rectangle" href={this.props.href}>
             <p>buscar</p>
           </Boton>
         </Tooltip>
