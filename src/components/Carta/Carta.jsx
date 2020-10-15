@@ -6,6 +6,9 @@ const { Meta } = Card;
 
 class Carta extends React.Component {
   render() {
+      console.log(this.props);
+
+
     return (
       <>
         <div
@@ -21,13 +24,13 @@ class Carta extends React.Component {
             cover={
               <img
                 alt="example"
-                src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"
+                src={this.props.src?this.props.src:"https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"}
               />
             }
           >
             <Meta
-              title="Europe Street beat"
-              description="www.instagram.com"
+              title={this.props.title}
+              description={this.props.description}
               avatar={
                 <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
               }

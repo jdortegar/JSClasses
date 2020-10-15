@@ -8,7 +8,7 @@ class Comments extends React.Component {
     const ExampleComment = ({ children }) => (
       <Comment
          actions={[<span key="comment-nested-reply-to">Reply to</span>]}
-         author={<a>Camilo M</a>}
+         author={this.props.author}
          avatar={
        <Avatar
          src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"
