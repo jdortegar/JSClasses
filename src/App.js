@@ -15,8 +15,17 @@ function App() {
       <NavBar></NavBar>
       <Slider></Slider>
       <div className="style_card">
-        <Carta title={dataJson[0].title} src={dataJson[0].variants[0].photos[0].formats.medium.url} description={'$'+ dataJson[0].price/100}/>
-        <Carta title="This is the title"/>
+        <Carta 
+        title={dataJson[0].title} 
+        src={dataJson[0].variants[0].photos[0].formats.medium.url}
+        description={'$'+ dataJson[0].price/100}
+        //showbutton={true}
+        showbutton={dataJson[0].variants.length>1?true:false}
+        variantes={dataJson[0].variants}
+        />
+
+        <Carta title="This is the title"
+         showbutton={true}/>
         <Carta src="https://a.wattpad.com/cover/178446982-352-k915396.jpg"/>
       </div>
       <Comments author="Kum Pao chicken"/>
