@@ -1,16 +1,24 @@
 import React from "react";
-import { Card, Avatar } from "antd";
-import Button from "../Button/Button";
-import { dataJson } from "../../data";
+import { Card, Avatar, Button } from "antd";
 
 
 const { Meta } = Card;
 
 class Carta extends React.Component {
+  state = {
+    photo: this.props.variantes[0].photos[0].url,
+    contador: 0
+  }
+
   render() {
-    console.log(this.props);
 
-
+    const manejaClick = (indice) => {
+      this.setState({
+        photo: this.props.variantes[indice].photos[0].url,
+        contador: this.state.contador + 1
+      })
+    }
+    console.log(this.state)
     return (
       <>
         <div
@@ -26,10 +34,11 @@ class Carta extends React.Component {
             cover={
               <img
                 alt="example"
-                src={this.props.src ? this.props.src : "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png"}
+                src={this.state.photo}
               />
             }
           >
+            <h1>{this.state.contador}</h1>
             <Meta
               title={this.props.title}
               description={this.props.description}
@@ -45,12 +54,19 @@ class Carta extends React.Component {
                     padding: "30px 0px 0px",
                     width: "100%",
                     justifyContent: "space-between",
+                    flexDirection: "column",
                   }}>
                   <Button
-                    title={this.props.variantes[0].title}></Button>
+                    onClick={() => manejaClick(0)}
+                    type='primary'
+                  >
+                    {this.props.variantes[0].title} </Button>
                   <Button
                     title={this.props.variantes[1].title}
-                  />
+                    onClick={() => manejaClick(1)}
+                    type='primary'>
+                    {this.props.variantes[1].title}
+                  </Button>
                 </div>
               ) : null
             }

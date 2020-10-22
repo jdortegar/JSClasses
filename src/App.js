@@ -24,9 +24,9 @@ function App() {
         variantes={dataJson[0].variants}
         />
 
-        <Carta title="This is the title"
+        {/* <Carta title="This is the title"
          showbutton={true}/>
-        <Carta src="https://a.wattpad.com/cover/178446982-352-k915396.jpg"/>
+        <Carta src="https://a.wattpad.com/cover/178446982-352-k915396.jpg"/> */}
       </div>
       <Comments author="Kum Pao chicken"/>
     </div>
